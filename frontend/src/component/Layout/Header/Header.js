@@ -1,8 +1,7 @@
 import React from "react";
-//import { ReactNavbar } from "overlay-navbar";
-import ReactNavbar from "../../../lib/ReactNavbar";
+import { ReactNavbar } from "overlay-navbar";
 import logo from "../../../images/logo.png";
-import "./Header.css";
+//import { FaBeer } from 'react-icons/fa'
 
 const options = {
   burgerColorHover: "#eb4034",
@@ -12,27 +11,24 @@ const options = {
   logoHoverSize: "10px",
   logoHoverColor: "#eb4034",
   link1Text: "Home",
-  link2Text: "Product",
+  link2Text: "Products",
   link3Text: "Contact",
   link4Text: "About",
-  link5Text: "Search",
   link1Url: "/",
   link2Url: "/products",
   link3Url: "/contact",
   link4Url: "/about",
-  link5Url:"/search",
   link1Size: "1.3vmax",
   link1Color: "rgba(35, 35, 35,0.8)",
   nav1justifyContent: "flex-end",
   nav2justifyContent: "flex-end",
   nav3justifyContent: "flex-start",
   nav4justifyContent: "flex-start",
-  nav5justifyContent: "flex-start",
   link1ColorHover: "#eb4034",
   link1Margin: "1vmax",
   profileIconUrl: "/login",
+  searchIconMargin:"0",
   profileIconColor: "rgba(35, 35, 35,0.8)",
-  searchIconUrl:"rgba(35, 35, 35,0.8)",
   searchIconColor: "rgba(35, 35, 35,0.8)",
   cartIconColor: "rgba(35, 35, 35,0.8)",
   profileIconColorHover: "#eb4034",
@@ -42,11 +38,59 @@ const options = {
 };
 
 const Header = () => {
-  return( 
-  <div className="Navbar">
-    <ReactNavbar {...options} />
-  </div>
-  );
+  return <ReactNavbar {...options} />;
 };
 
 export default Header;
+
+
+// import React from "react";
+// import { ReactNavbar } from "overlay-navbar";
+// //import ReactNavbar from "../../../lib/ReactNavbar";
+// import logo from "../../../images/logo.png";
+// import "./Header.css";
+
+// const options = {
+//   burgerColorHover: "#eb4034",
+//   logo,
+//   logoWidth: "20vmax",
+//   navColor1: "white",
+//   logoHoverSize: "10px",
+//   logoHoverColor: "#eb4034",
+//   link1Text: "Home",
+//   link2Text: "Product",
+//   link3Text: "Contact",
+//   link4Text: "About",
+//   link1Url: "/",
+//   link2Url: "/products",
+//   link3Url: "/contact",
+//   link4Url: "/about",
+//   link1Size: "1.3vmax",
+//   link1Color: "rgba(35, 35, 35,0.8)",
+//   nav1justifyContent: "flex-end",
+//   nav2justifyContent: "flex-end",
+//   nav3justifyContent: "flex-start",
+//   nav4justifyContent: "flex-start",
+//   nav5justifyContent: "flex-start",
+//   link1ColorHover: "#eb4034",
+//   link1Margin: "1vmax",
+//   profileIconUrl: "/login",
+//   profileIconColor: "rgba(35, 35, 35,0.8)",
+//   searchIconUrl:"rgba(35, 35, 35,0.8)",
+//   searchIconColor: "rgba(35, 35, 35,0.8)",
+//   cartIconColor: "rgba(35, 35, 35,0.8)",
+//   profileIconColorHover: "#eb4034",
+//   searchIconColorHover: "#eb4034",
+//   cartIconColorHover: "#eb4034",
+//   cartIconMargin: "1vmax",
+// };
+
+// const Header = () => {
+//   return( 
+//   <div className="Navbar">
+//     <ReactNavbar {...options} />
+//   </div>
+//   );
+// };
+
+// export default Header;
