@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import ReactNavbar from "./lib/ReactNavbar";
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 import {Provider} from "react-redux";
@@ -24,4 +23,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-export { ReactNavbar };
